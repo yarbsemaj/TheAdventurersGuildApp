@@ -1,5 +1,6 @@
 package com.yarbsemaj.theadventurersguild;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,8 +29,11 @@ public class MessageBoardPick extends AppCompatActivity {
         messageBoardList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Log.d("Item",messageBoardAdapter.getItem(i).ID);
-
+                Bundle mBundle = new Bundle();
+                Intent mIntent = new Intent(getApplicationContext(), MessageList.class);
+                mBundle.putString("boardID", messageBoardAdapter.getItem(i).ID);
+                mIntent.putExtras(mBundle);
+                startActivity(mIntent);
             }
         });
     }

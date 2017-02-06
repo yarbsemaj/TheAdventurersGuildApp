@@ -19,7 +19,8 @@
         </activity>
         <activity android:name=".MenuActivity" />
         <activity android:name=".LeaderBoard" />
-        <activity android:name=".MessageBoardPick"></activity>
+        <activity android:name=".MessageBoardPick" />
+        <activity android:name=".MessageList"></activity>
     </application>
 
 </manifest>
