@@ -7,29 +7,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1."
-        android:textColor="@color/Gray"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@color/Gray"
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/userName"
+        android:id="@+id/statName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/i"
+        android:layout_toRightOf="@+id/i"
         android:text="Uname"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="24sp"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/i"
-        android:layout_toEndOf="@+id/i" />
+        android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/score"
+        android:id="@+id/statValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Score"
-        android:textSize="14sp"
-        android:layout_alignBaseline="@+id/userName"
-        android:layout_alignBottom="@+id/userName"
+        android:layout_alignBaseline="@+id/statName"
+        android:layout_alignBottom="@+id/statName"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:text="Score"
+        android:textSize="14sp" />
 </RelativeLayout>

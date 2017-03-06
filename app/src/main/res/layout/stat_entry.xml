@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/statName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/i"
+        android:layout_toRightOf="@+id/i"
+        android:text="statName"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/statValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/statName"
+        android:layout_alignBottom="@+id/statName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="value"
+        android:textColor="@color/Black"
+        android:textSize="24sp" />
+</RelativeLayout>

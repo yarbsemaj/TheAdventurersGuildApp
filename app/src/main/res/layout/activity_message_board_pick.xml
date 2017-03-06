@@ -8,15 +8,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.yarbsemaj.theadventurersguild.MessageBoardPick">
+    tools:context="com.yarbsemaj.theadventurersguild.ui.MessageBoardPick">
 
     <ListView
+        android:id="@+id/messageBoardList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/messageBoardList"
-        android:footerDividersEnabled="false"
-        android:headerDividersEnabled="false"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
 </RelativeLayout>

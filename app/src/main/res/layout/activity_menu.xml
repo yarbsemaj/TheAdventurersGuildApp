@@ -8,39 +8,50 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.yarbsemaj.theadventurersguild.MenuActivity">
+    tools:context="com.yarbsemaj.theadventurersguild.ui.MenuActivity">
 
     <Button
-        android:text="Message Board"
+        android:id="@+id/gotoMessageBoard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/leaderBoardButton"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/gotoMessageBoard"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/leaderBoardButton"
+        android:text="Message Board" />
 
     <TextView
-        android:text="Welcome back Traveler"
+        android:id="@+id/welcomeBanner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/welcomeBanner"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:fontFamily="sans-serif"
-        android:textSize="30sp"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif"
+        android:text="Welcome back Traveler"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="30sp" />
 
     <Button
-        android:text="Leader Board"
+        android:id="@+id/leaderBoardButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/leaderBoardButton"
-        android:layout_below="@+id/welcomeBanner"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/welcomeBanner"
+        android:text="Leader Board" />
+
+    <Button
+        android:id="@+id/gotoCharaList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gotoMessageBoard"
+        android:text="Character List" />
 </RelativeLayout>

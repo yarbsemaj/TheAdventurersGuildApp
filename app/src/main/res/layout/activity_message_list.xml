@@ -8,36 +8,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.yarbsemaj.theadventurersguild.MessageList">
+    tools:context="com.yarbsemaj.theadventurersguild.ui.MessageList">
 
     <ListView
+        android:id="@+id/messageList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_above="@+id/messageText"
-        android:id="@+id/messageList" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
+        android:id="@+id/messageText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/messageText"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/post"
         android:layout_toLeftOf="@+id/post"
-        android:hint="Message" />
+        android:layout_toStartOf="@+id/post"
+        android:ems="10"
+        android:hint="Message"
+        android:inputType="textPersonName" />
 
     <Button
-        android:text="Post"
+        android:id="@+id/post"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/post"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_below="@+id/messageList"
 
-        android:layout_below="@+id/messageList" />
+        android:text="Post" />
 </RelativeLayout>
